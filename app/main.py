@@ -22,6 +22,12 @@ class Submission(BaseModel):
     submission: list
 
 
+class SubmissionOut(BaseModel):
+    email: str
+    submitted_at: datetime
+    submission: list
+
+
 app = FastAPI(
     title='CS Autograde',
     summary="Storage for exam solutions",
@@ -52,7 +58,7 @@ def create_note(data: Submission, db: Session = Depends(get_db)):
     return submission
 
 
-@app.get("/submissions")
+@app.get("/submissions", response_model=SubmissionOut)
 def get_notes(email: str, module: str, db: Session = Depends(get_db)):
     """
     Retrieve submissions based on email and module.
