@@ -65,6 +65,6 @@ def get_notes(email: str, module: str, db: Session = Depends(get_db)):
     - submissions (models.Submission): Latest submission matching the email and module.
     """
     submissions = db.query(models.Submission).filter(
-        models.Submission.email == email and models.Submission.module == module).first()
+        models.Submission.email == email, models.Submission.module == module).order_by(models.Submission.submitted_at.desc()).first()
 
     return submissions
