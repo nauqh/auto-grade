@@ -1,0 +1,86 @@
+{
+    "M2.1": {
+        "1": {
+            "score": 4,
+            "solution": "A"
+        },
+        "2": {
+            "score": 4,
+            "solution": "B"
+        },
+        "3": {
+            "score": 12,
+            "solution": "c,e"
+        },
+        "4": {
+            "score": 4,
+            "solution": "B"
+        },
+        "5": {
+            "score": 10,
+            "solution": "E"
+        },
+        "6": {
+            "score": 12,
+            "solution": "A,C"
+        },
+        "7": {
+            "score": 12,
+            "solution": "C,D"
+        },
+        "8": {
+            "score": 4,
+            "solution": "C"
+        }
+    },
+    "M3.1": {
+        "1": {
+            "score": 4,
+            "solution": "D"
+        },
+        "2": {
+            "score": 4,
+            "solution": "A"
+        },
+        "3": {
+            "score": 4,
+            "solution": "A"
+        },
+        "4": {
+            "score": 4,
+            "solution": "B"
+        },
+        "5": {
+            "score": 4,
+            "solution": "B"
+        },
+        "6": {
+            "score": 4,
+            "solution": "A"
+        },
+        "7": {
+            "score": 4,
+            "solution": "C"
+        },
+        "8": {
+            "score": 4,
+            "solution": "A"
+        },
+        "9": {
+            "score": 4,
+            "solution": "D"
+        },
+        "10": {
+            "score": 14,
+            "solution": "C"
+        },
+        "11": {
+            "score": 4,
+            "solution": "A"
+        },
+        "12": {
+            "score": 4,
+            "solution": "C"
+        }
+    }
+}
