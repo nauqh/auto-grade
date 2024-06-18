@@ -48,7 +48,7 @@ def root():
     return {"message": "Root endpoint"}
 
 
-@app.post("/submissions", status_code=status.HTTP_201_CREATED)
+@app.post("/submissions", status_code=status.HTTP_201_CREATED, response_model=SubmissionOut)
 def create_note(data: Submission, db: Session = Depends(get_db)):
     submission = models.Submission(**data.model_dump())
 
