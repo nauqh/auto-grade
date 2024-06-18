@@ -58,7 +58,7 @@ def create_note(data: Submission, db: Session = Depends(get_db)):
     return submission
 
 
-@app.get("/submissions", response_model=SubmissionOut)
+@app.get("/submissions")
 def get_notes(email: str, module: str, db: Session = Depends(get_db)):
     """
     Retrieve submissions based on email and module.
